@@ -13,3 +13,8 @@ cerrar.addEventListener("click", () => {
 modal.addEventListener("click", e => {
     if (e.target === modal) modal.style.display = "none";
 });
+
+btnModal.addEventListener("contextmenu", e => {
+    e.preventDefault();
+    modal.style.display = "flex";
+});
