@@ -62,3 +62,7 @@ burbujas.forEach(b => {
         setTimeout(() => b.classList.remove("resaltar"), 300);
     });
 });
+
+if (!modal || !btnModal) {
+    console.warn("Modal o botón modal no encontrado");
+}
