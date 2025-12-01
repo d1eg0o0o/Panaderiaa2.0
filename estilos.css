@@ -127,3 +127,11 @@ header {
     padding: 10px;
     cursor: pointer;
 }
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #75d58d;
+    color: white;
+}
