@@ -24,17 +24,6 @@ let botones = document.querySelectorAll(".acordeon-btn");
 botones.forEach(boton => {
     boton.addEventListener("click", () => {
         let contenido = boton.nextElementSibling;
-        if (contenido.style.display === "block") {
-            contenido.style.display = "none";
-        } else {
-            contenido.style.display = "block";
-        }
-    });
-});
-
-botones.forEach(boton => {
-    boton.addEventListener("click", () => {
-        let contenido = boton.nextElementSibling;
         contenido.classList.toggle("mostrar");
     });
 });
@@ -62,7 +51,3 @@ burbujas.forEach(b => {
         setTimeout(() => b.classList.remove("resaltar"), 300);
     });
 });
-
-if (!modal || !btnModal) {
-    console.warn("Modal o botón modal no encontrado");
-}

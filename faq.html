@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Lime - Preguntas Frecuentes</title>
-     <link rel="stylesheet" href="estilos.css">
+    <title>Página FAQ</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+
 <header>
-    <h1 class="logo">Sweet Lime</h1>
-    <nav class="menu">
-        <a href="../index.html" class="btnHome-popup">Inicio</a>
-        <a href="../HTML/SobreNosotros.html">Sobre</a>
-        <a href="../HTML/servicios.html">Servicios</a>
-        <a href="https://wa.me/542994617168" class="btnContact-popup">Contacto</a>
-        <a href="../HTML/Login.index.html" class="btnLogin-popup">Registrarse</a>
+    <nav>
+        <ul>
+           <li><a href="#" class="nav-link">Inicio</a></li>
+            <li><a href="#" class="nav-link">Productos</a></li>
+            <li><a href="#" class="nav-link">Servicios</a></li>
+            <li><a href="#" class="nav-link btn-modal">Contacto</a></li>
+        </ul>
     </nav>
 </header>
-    <main class="faq-container">
-         <h2>Preguntas Frecuentes</h2>
-<section class="faq-cards">
-<div class="card">
-    <h3>¿Hacen envíos?</h3>
-    <p>Sí, realizamos envíos en la zona.</p>
-</div>
 
-<div class="card">
-    <h3>¿Qué medios de pago aceptan?</h3>
-    <p>Aceptamos efectivo y transferencias.</p>
-</div>
+<section class="contenido">
+    <h1>Preguntas Frecuentes</h1>
 
-<div class="card">
-    <h3>¿Tienen atención al cliente?</h3>
-    <p>Sí, por WhatsApp.</p>
-</div>
+    <div class="faq-cards">
+
+        <div class="card">
+            <h3>¿Cómo hago un pedido?</h3>
+            <p>Puedes hacer tu pedido a través del formulario o por WhatsApp.</p>
+        </div>
+
+        <div class="card">
+            <h3>¿Cuánto tarda la entrega?</h3>
+            <p>Los envíos tardan entre 24 y 48 horas.</p>
+        </div>
+
+        <div class="card">
+            <h3>¿Qué métodos de pago aceptan?</h3>
+            <p>Aceptamos efectivo, transferencia y Mercado Pago.</p>
+        </div>
+
+    </div>
+
+
+    <div class="faq-acordeon">
+
+        <button class="acordeon-btn">¿Puedo devolver un producto?</button>
+        <div class="acordeon-contenido">
+            <p>Sí, dentro de los primeros 5 días hábiles.</p>
+        </div>
+
+        <button class="acordeon-btn">¿Hacen envíos al interior?</button>
+        <div class="acordeon-contenido">
+            <p>Sí, mediante correo.</p>
+        </div>
+
+        <button class="acordeon-btn">¿Tienen garantía?</button>
+        <div class="acordeon-contenido">
+            <p>Todos nuestros productos cuentan con garantía oficial.</p>
+        </div>
+
+    </div>
+
+    <div class="faq-burbujas">
+        <div class="burbujas"></div>
+        <div class="burbujas"></div>
+        <div class="burbujas"></div>
+    </div>
 
 </section>
-<section class="faq-acordeon">
 
-<div class="acordeon-item">
-    <button class="acordeon-btn">Horarios</button>
-    <p class="acordeon-content">Abrimos de 9 a 18 hs.</p>
-</div>
-
-<div class="acordeon-item">
-    <button class="acordeon-btn">Envíos</button>
-    <p class="acordeon-content">Enviamos en el día.</p>
-</div>
-
-<div class="acordeon-item">
-    <button class="acordeon-btn">Garantía</button>
-    <p class="acordeon-content">Productos garantizados.</p>
-</div>
-</section>
-
-<section class="faq-burbujas">
-<div class="burbujas">WhatsApp</div>
-<div class="burbujas">Envíos</div>
-<div class="burbujas">Horarios</div>
-</section>
-
-<button class="btn btn-modal animar" id="botonModal">
-     Mostrar mensaje
- </button>
-
-</main>
-
-<div class="modal" id="modal">
-    <div class="modal-content">
-        <p>Este es un mensaje del modal.</p>
-        <button class="cerrar-modal">Cerrar</button>
+<div id="modal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar-modal">&times;</span>
+        <h2>Contacto</h2>
+        <p>Envíanos un mensaje y te responderemos a la brevedad.</p>
     </div>
 </div>
 
 <script src="script.js"></script>
-
-</body>
 <footer>
     <p>Sweet Lime - Todos los derechos reservados</p>
 </footer>
+
+</body>
 </html>
