@@ -33,3 +33,10 @@ header {
     padding: 40px;
     text-align: center;
 }
+
+.faq-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
