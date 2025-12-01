@@ -53,3 +53,12 @@ cards.forEach(card => {
 window.addEventListener("load", () => {
     document.body.classList.add("animar");
 });
+
+let burbujas = document.querySelectorAll(".burbujas");
+
+burbujas.forEach(b => {
+    b.addEventListener("click", () => {
+        b.classList.add("resaltar");
+        setTimeout(() => b.classList.remove("resaltar"), 300);
+    });
+});
