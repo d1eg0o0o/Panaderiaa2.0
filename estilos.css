@@ -61,3 +61,14 @@ header {
     margin-right: auto;
     text-align: left;
 }
+
+.acordeon-btn {
+    width: 100%;
+    padding: 15px;
+    background: #75d58d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
