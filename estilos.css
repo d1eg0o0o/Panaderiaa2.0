@@ -40,3 +40,11 @@ header {
     gap: 25px;
     margin-top: 30px;
 }
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #c5f0d1;
+    transition: .3s;
+}
