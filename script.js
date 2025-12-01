@@ -31,3 +31,10 @@ botones.forEach(boton => {
         }
     });
 });
+
+botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+        let contenido = boton.nextElementSibling;
+        contenido.classList.toggle("mostrar");
+    });
+});
