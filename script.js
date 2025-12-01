@@ -38,3 +38,14 @@ botones.forEach(boton => {
         contenido.classList.toggle("mostrar");
     });
 });
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+        card.classList.add("resaltar");
+    });
+    card.addEventListener("mouseleave", () => {
+        card.classList.remove("resaltar");
+    });
+});
