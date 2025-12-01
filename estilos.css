@@ -10,13 +10,13 @@ body.animar {
 }
 
 body {
-    background: #f5f5f5;
+    background: #c6d4db;
     opacity: 0;
     transition: opacity .6s ease;
 }
 
 header {
-    background: #1b1b1b;
+    background: #72bb60;
     padding: 20px 0;
     animation: headerFloat 4s ease-in-out infinite;
 }
@@ -201,28 +201,64 @@ animation: lateral 2s ease-in-out infinite alternate;
     transform: scale(1.3);
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    background: rgba(0,0,0,0.6);
-    inset: 0;
-    justify-content: center;
-    align-items: center;
+.boton-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f2b705;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.boton-modal:hover {
+  transform: scale(1.05);
+}
+
+.modal-visible, .modal-oculto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+  z-index: 9999;
+}
+
+.modal-oculto {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-visible {
+  opacity: 1;
 }
 
 .modal-contenido {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    width: 350px;
-    text-align: center;
-    position: relative;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  font-family: 'Pacifico', cursive;
+  animation: aparecer 0.3s ease;
 }
 
-.cerrar-modal {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
-    font-size: 22px;
+@keyframes aparecer {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
 }
