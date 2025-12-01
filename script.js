@@ -9,3 +9,7 @@ let cerrar = document.querySelector(".cerrar-modal");
 cerrar.addEventListener("click", () => {
     modal.style.display = "none";
 });
+
+modal.addEventListener("click", e => {
+    if (e.target === modal) modal.style.display = "none";
+});
