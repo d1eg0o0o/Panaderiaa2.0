@@ -49,3 +49,7 @@ cards.forEach(card => {
         card.classList.remove("resaltar");
     });
 });
+
+window.addEventListener("load", () => {
+    document.body.classList.add("animar");
+});
