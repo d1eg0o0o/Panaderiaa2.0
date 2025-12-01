@@ -110,3 +110,11 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
