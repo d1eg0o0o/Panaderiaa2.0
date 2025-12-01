@@ -18,3 +18,16 @@ btnModal.addEventListener("contextmenu", e => {
     e.preventDefault();
     modal.style.display = "flex";
 });
+
+let botones = document.querySelectorAll(".acordeon-btn");
+
+botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+        let contenido = boton.nextElementSibling;
+        if (contenido.style.display === "block") {
+            contenido.style.display = "none";
+        } else {
+            contenido.style.display = "block";
+        }
+    });
+});
