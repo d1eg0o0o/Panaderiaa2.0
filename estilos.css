@@ -72,3 +72,10 @@ header {
     border-radius: 5px;
     margin-top: 15px;
 }
+
+.acordeon-content {
+    display: none;
+    padding: 10px;
+    background: #e8ffe9;
+    border-left: 3px solid #75d58d;
+}
