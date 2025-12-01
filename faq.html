@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Lime - Preguntas Frecuentes</title>
      <link rel="stylesheet" href="estilos.css">
 </head>
@@ -19,7 +20,6 @@
 </header>
     <main class="faq-container">
          <h2>Preguntas Frecuentes</h2>
-</main>
 <section class="faq-cards">
 <div class="card">
     <h3>¿Hacen envíos?</h3>
@@ -61,15 +61,22 @@
 <div class="burbuja">Horarios</div>
 </section>
 
-<button class="btn-modal">Abrir Información</button>
+<button class="btn btn-modal animar" id="botonModal">
+     Mostrar mensaje
+ </button>
+
+</main>
+
 <div class="modal" id="modal">
     <div class="modal-content">
         <p>Este es un mensaje del modal.</p>
         <button class="cerrar-modal">Cerrar</button>
     </div>
 </div>
-</body>
+
 <script src="script.js"></script>
+
+</body>
 <footer>
     <p>Sweet Lime - Todos los derechos reservados</p>
 </footer>
