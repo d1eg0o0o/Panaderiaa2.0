@@ -10,13 +10,13 @@ body.animar {
 }
 
 body {
-    background: #c6d4db;
+    background: #E7DEAF;
     opacity: 0;
     transition: opacity .6s ease;
 }
 
 header {
-    background: #72bb60;
+    background: #1B3C53;
     padding: 20px 0;
     animation: headerFloat 4s ease-in-out infinite;
 }
@@ -47,11 +47,20 @@ nav a:hover {
     text-shadow: 0 0 10px #75d58d;
 }
 
+h1{
+     width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+    color: #464a6b;
+}
+
 .contenido {
     width: 90%;
     max-width: 1100px;
     margin: 40px auto;
     text-align: center;
+    color: #ffffff;
 }
 
 .faq-cards {
@@ -59,17 +68,21 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 40px;
+    align-items: center;
 }
 
 .card {
     position: relative;
     width: 260px;
     padding: 24px;
-    background: #fff;
+    background: #AAC4F5;
     border-radius: 16px;
-    overflow: hidden;
     transition: transform .25s, box-shadow .25s;
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     z-index: 3;
     transition:transform .4s ease, box-shadow .4s ease;
 animation: cardAppear 4s forwards;
@@ -82,48 +95,11 @@ animation: cardAppear 4s forwards;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    transform: translateY(5px);
+    box-shadow: 0 10px 25px rgba(209, 44, 209, 0.808);
 }
 
-.card::after {
-    content: "";
-    position: absolute;
-    inset: -3px;
-    border-radius: 18px;
-    background: conic-gradient(
-        #75d58d,
-        transparent 25%,
-        #75d58d 50%,
-        transparent 75%,
-        #75d58d
-    );
-    opacity: 0;
-    pointer-events: none;
-    z-index: 1;
-    animation: rotateRing 4s linear infinite, glowBreath 3s ease-in-out infinite;
-}
-
-@keyframes glowBreath {
-    0%   { opacity: 0.35; }
-    50%  { opacity: 0.85; }
-    100% { opacity: 0.35; }
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: white;
-    border-radius: 14px;
-    z-index: 2;
-}
-
-.card:hover::after {
-    opacity: 1;
-}
-
-.card h3,
+.card h2,
 .card p {
     position: relative;
     z-index: 3;
@@ -134,9 +110,10 @@ animation: cardAppear 4s forwards;
     to { transform: rotate(360deg); }
 }
 
+
 .acordeon-btn {
-    background: #75d58d;
-    color: #fff;
+    background: #92487A;
+    color: #ffffff;
     text-align: left;
     border: none;
     padding: 15px;
@@ -163,7 +140,7 @@ animation: lateral 2s ease-in-out infinite alternate;
     width: 100%;
     max-width: 500px;
     margin: 0 auto 10px auto;
-    background: white;
+    background: rgb(160, 187, 145);
     border-radius: 8px;
     padding: 0;
     height: 0;
@@ -186,7 +163,7 @@ animation: lateral 2s ease-in-out infinite alternate;
 .burbujas {
     width: 40px;
     height: 40px;
-    background: #75d58d;
+    background: #456882;
     border-radius: 50%;
     transition: transform .2s;
     animation: float 3s ease-in-out infinite;
@@ -201,11 +178,73 @@ animation: lateral 2s ease-in-out infinite alternate;
     transform: scale(1.3);
 }
 
+.contenedor{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.tarjeta{
+    height: 250px;
+    width: 250px;
+    background-color: #658C58;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #615e5e;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-image: conic-gradient(#BBC863 20deg, transparent 120deg);
+    animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.tarjeta::after{
+    content: "";
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    background-color: #658C58;
+    border-radius: 10%;
+    box-shadow: inset 16px 14px 20px #615d5d;
+}
+
+h3{
+    color: white;
+    z-index: 2;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 5px 5px 5px grey;
+    position: absolute;
+}
+
 .boton-modal {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #f2b705;
+  background-color: #BBC863;
   color: white;
   border: none;
   border-radius: 10px;
